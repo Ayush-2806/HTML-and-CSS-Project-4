@@ -1,0 +1,65 @@
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+
+.Mobile,.Tablet,.Laptop,.large{
+    display: none;
+}
+
+@media  screen and (max-width:426px) {
+    body{
+        background-color: crimson;
+    }
+
+    .Mobile{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media  screen and (min-width:426px )  and (max-width:769px)  {
+    body{
+        background-color: aqua;
+    }
+
+    .Tablet{
+        display: block;
+        text-align: center;
+    }
+
+    
+}
+
+
+@media  screen and (min-width:769px )  and (max-width:1025px)  {
+    body{
+        background-color: darkgoldenrod;
+    }
+
+    .Laptop{
+        display: block;
+        text-align: center;
+    }
+
+    
+}
+
+
+@media  screen and (min-width:1025px )  and (max-width:1441px)  {
+    body{
+        background-color: forestgreen;
+    }
+
+    .large{
+        display: block;
+        text-align: center;
+    }
+
+    
+}
